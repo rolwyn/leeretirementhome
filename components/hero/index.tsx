@@ -1,7 +1,6 @@
 import { APP_NAME } from '@/lib/constants';
 import Image from 'next/image'
-import { Button } from '../ui/button';
-import Link from 'next/link';
+import Contact from '@/components/contact';
 
 const Hero = () => {
   return ( 
@@ -30,11 +29,7 @@ const Hero = () => {
             <p className="mt-2 text-lg lg:text-xl drop-shadow max-w-6xl lg:mx-auto p-5 md:px-10 w-full">
               We are a dedicated assisted living facility committed to providing a warm, safe, and enriching environment for seniors. Our mission is to enhance the lives of our residents by offering personalized care, fostering independence, and promoting well-being.
             </p>
-            <Button asChild>
-              <Link href='/contact'>
-                Contact Us
-              </Link>
-					  </Button>
+            <Contact type={'Hero'}/>
           </div>
         </div>
       </div>
