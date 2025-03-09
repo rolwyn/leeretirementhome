@@ -1,8 +1,9 @@
-import { CircleAlert, UserIcon, House, MapPinHouse, Cog, Mail } from 'lucide-react';
+import { CircleAlert, House, MapPinHouse, Cog, Mail } from 'lucide-react';
 // import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { APP_NAME } from '@/lib/constants' 
+import ModeToggle from './mode-toggle';
 
 const Header = () => {
 	return (
@@ -27,6 +28,7 @@ const Header = () => {
           </Link>
         </div>
 				<div className="space-x-2">
+					<ModeToggle />
 					<Button asChild variant='ghost'>
 						<Link href='/locations'>
 							<MapPinHouse /> Locations
@@ -42,14 +44,14 @@ const Header = () => {
 							<CircleAlert /> About
 						</Link>
 					</Button>
-          <Button asChild variant='ghost'>
-						<Link href='/contact'>
-							<Mail /> Contact
-						</Link>
-					</Button>
-					<Button asChild variant='ghost'>
+					{/* <Button asChild variant='ghost'>
 						<Link href='/sign-in'>
 							<UserIcon /> Sign In
+						</Link>
+					</Button> */}
+          <Button asChild>
+						<Link href='/contact'>
+							<Mail /> Contact
 						</Link>
 					</Button>
 				</div>
