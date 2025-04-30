@@ -1,0 +1,14 @@
+{
+    "Header": {
+      "locations": "위치"
+    },
+    "Location": {
+      "name": "롤윈"
+    },
+    "Home": {
+      "title-hero": "골든타임 & 삼랑봉 케어 어시스턴트 리빙에 오신 것을 환영합니다.",
+      "title-hero-prefix": "에 오신 것을 환영합니다",
+      "title-hero-golden": "골든타임",
+      "title-hero-suffix": "& 사랑봉 케어 어시스턴트 리빙"
+    }
+  }

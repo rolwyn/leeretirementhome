@@ -1,8 +1,10 @@
 import { APP_NAME } from '@/lib/constants';
 import Image from 'next/image'
 import Contact from '@/components/contact';
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
+  const t = useTranslations('Home')
   return ( 
     <div className="relative w-full">
       <Image
@@ -21,7 +23,10 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div className="text-center text-white">
             <h2 className="text-4xl font-bold drop-shadow-md mb-6">
-              Welcome to <span className="text-[#e3ce15]">Golden Time</span> & Sah Rang Bong Care Assisted Living
+              {t('title-hero-prefix')}{' '}
+              <span className="text-[#e3ce15]">{t('title-hero-golden')}</span>{' '}
+              {t('title-hero-suffix')}
+              {/* Welcome to <span className="text-[#e3ce15]">Golden Time</span> & Sah Rang Bong Care Assisted Living */}
             </h2>
             <p className="mt-2 text-lg drop-shadow">
               Where compassionate care meets comfort and community

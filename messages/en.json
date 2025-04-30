@@ -1,0 +1,13 @@
+{
+    "Header": {
+      "locations": "Locations"
+    },
+    "Location": {
+      "name": "Rolwyn"
+    },
+    "Home": {
+      "title-hero-prefix": "Welcome to",
+      "title-hero-golden": "Golden Time",
+      "title-hero-suffix": "& Sah Rang Bong Care Assisted Living"
+    }
+  }
